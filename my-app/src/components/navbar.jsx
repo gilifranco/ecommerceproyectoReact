@@ -24,7 +24,7 @@ const Navbar = () => {
         <Form contenBuscar="Productos"/>
     </div>
     <>
-      <Cartwidget className= "icon"/>
+      <Cartwidget/>
     </>
   </div>
 </nav>
