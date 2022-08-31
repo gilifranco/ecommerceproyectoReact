@@ -4,7 +4,7 @@ export const data = [
       title: "Shampoo ColorMaster Neutro",
       price: 100,
       picureURL:
-        "",
+        "https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/3caedb57c154f4c66adc1fae2b6a3bf5/P/R/PR29539BI19724_PS131738_BLENDS_OF_MANY_REBAL_TONIC_100ml_SZ1.png",
       stock: 20,
     },
     {
@@ -12,7 +12,7 @@ export const data = [
       title: "Shampoo CAVIAR 1L",
       price: 100,
       picureURL:
-        "",
+        "https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/3caedb57c154f4c66adc1fae2b6a3bf5/P/R/PR29539BI19724_PS131738_BLENDS_OF_MANY_REBAL_TONIC_100ml_SZ1.png",
       stock: 25,
     },
     {
@@ -20,7 +20,7 @@ export const data = [
       title: "Shampoo Caviar ARGAN",
       price: 100,
       picureURL:
-        "",
+        "https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/3caedb57c154f4c66adc1fae2b6a3bf5/P/R/PR29539BI19724_PS131738_BLENDS_OF_MANY_REBAL_TONIC_100ml_SZ1.png",
       stock: 30,
     },
     {
@@ -28,7 +28,7 @@ export const data = [
       title: "Crema de Peinar Caviar",
       price: 500,
       picureURL:
-        "",
+        "https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/3caedb57c154f4c66adc1fae2b6a3bf5/P/R/PR29539BI19724_PS131738_BLENDS_OF_MANY_REBAL_TONIC_100ml_SZ1.png",
       stock: 32,
     },
     {
@@ -36,7 +36,7 @@ export const data = [
       title: "Ampollas Fidelite",
       price: 500,
       picureURL:
-        "",
+        "https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/3caedb57c154f4c66adc1fae2b6a3bf5/P/R/PR29539BI19724_PS131738_BLENDS_OF_MANY_REBAL_TONIC_100ml_SZ1.png",
       stock: 16,
     },
     {
@@ -44,7 +44,7 @@ export const data = [
       title: "Ampollas Semi di Lino",
       price: 500,
       picureURL:
-        "",
+        "https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/3caedb57c154f4c66adc1fae2b6a3bf5/P/R/PR29539BI19724_PS131738_BLENDS_OF_MANY_REBAL_TONIC_100ml_SZ1.png",
       stock: 21,
     },
     {
@@ -52,7 +52,7 @@ export const data = [
       title: "Shampoo semi DiLino",
       price: 1000,
       picureURL:
-        "",
+        "https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/3caedb57c154f4c66adc1fae2b6a3bf5/P/R/PR29539BI19724_PS131738_BLENDS_OF_MANY_REBAL_TONIC_100ml_SZ1.png",
       stock: 3,
     },
     {
@@ -60,7 +60,7 @@ export const data = [
       title: "Mascara Loreal",
       price: 1000,
       picureURL:
-        "",
+        "https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/3caedb57c154f4c66adc1fae2b6a3bf5/P/R/PR29539BI19724_PS131738_BLENDS_OF_MANY_REBAL_TONIC_100ml_SZ1.png",
       stock: 40,
     },
     {
@@ -68,7 +68,7 @@ export const data = [
       title: "Shampoo Loreal",
       price: 1000,
       picureURL:
-        "",
+        "https://d3cdlnm7te7ky2.cloudfront.net/media/catalog/product/cache/3caedb57c154f4c66adc1fae2b6a3bf5/P/R/PR29539BI19724_PS131738_BLENDS_OF_MANY_REBAL_TONIC_100ml_SZ1.png",
       stock: 35,
     },
   ];
