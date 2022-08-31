@@ -1,43 +1,51 @@
 import {useState} from 'react'
 
-const Counter = ({stock, onAdd , min, sum ,res  }) => {
-    const [count, setCount] = useState(min)
+const Counter = (props) => {
+    const [ProductCount, setProductCount] = useState(1);
 
-    function add(){
-       if(count < stock){
-                 setCount(count + sum )
-        }          
-    }
-
-    function substract(){
-           if(count >= min){
-                setCount(count - res )
-           }
-        }
-    
-
-    function reset(){
-        setCount(min)
-    }
-
-  return (
-    <div className='card'>
-        <div className="counter-box card-title">
-            <h1>Producto</h1>
-            <p>Stock: {stock} </p>
-            <p>Cantidad: {count} </p>
-        
-            <div className='card-body'>
-                <button className="btn" onClick={substract}> - </button>
-                <button className="btn" onClick={reset} > Reset </button>
-                <button className="btn" onClick={add}> + </button>
+    const itemPlus = () => {
+      ProductCount < props.stock && setProductCount(ProductCount + 1);
+    };
+  
+    const itemMinus = () => {
+      ProductCount > 0 && setProductCount(ProductCount - 1);
+    };
+  
+    return (
+      <>
+        <div>
+          <div
+            className="btn-group"
+            role="group"
+            aria-label="Basic outlined example"
+          >
+            <button
+              type="button"
+              className="btn btn-outline-dark"
+              onClick={itemMinus}
+            >
+              <i className="bi bi-dash-circle-fill"></i>
+            </button>
+            <div className="container">
+              <h5>{ProductCount}</h5>
             </div>
-            <div>
-                <button className="btn" onClick={() => onAdd(count)}>Comprar</button>
-            </div>
+            <button
+              type="button"
+              className="btn btn-outline-dark"
+              onClick={itemPlus}
+            >
+              <i className="bi bi-plus-circle-fill"></i>
+            </button>
+          </div>
         </div>
-    </div>
-  )
-}
+  
+        <div className="text-end">
+          <button type="button" className="btn btn-outline-dark">
+            Agregar al carrito
+          </button>
+        </div>
+      </>
+    );
+  };
 
-export default Counter
+export default Counter; 

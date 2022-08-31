@@ -1,7 +1,7 @@
 import './App.css';
 import React from 'react';
 import Form from './Form';
-import Cartwidget from './Cartwidget';
+import CartWidget from './CartWidget';
 
 const Navbar = () => {
   return (
@@ -21,10 +21,11 @@ const Navbar = () => {
           <a className="nav-link" href="#">Nosotros</a>
         </li>
       </ul>
+        <CartWidget/>
         <Form contenBuscar="Productos"/>
     </div>
     <>
-      <Cartwidget/>
+ 
     </>
   </div>
 </nav>
