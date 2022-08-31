@@ -1,14 +1,12 @@
+import React from 'react';
+import { ImCart } from 'react-icons/im';
 
-import { AiOutlineShoppingCart } from 'react-icons/fa';
-
- const CartWidget = () => {
-
+ const Cartwidget = () => {
     return (
         <>
-        <AiOutlineShoppingCart fontsize="large"/>
-      </>
+            <h1>< ImCart size='2rem' color='white' padding='25px' />  </h1>
+        </>
     );
-  };
+}
 
-
-export default CartWidget;
+export default Cartwidget;

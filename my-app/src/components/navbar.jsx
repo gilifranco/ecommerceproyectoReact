@@ -3,6 +3,7 @@ import React from 'react';
 import Form from './Form';
 import CartWidget from './CartWidget';
 
+
 const Navbar = () => {
   return (
     <>
