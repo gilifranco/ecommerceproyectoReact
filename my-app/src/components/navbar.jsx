@@ -1,6 +1,7 @@
 import './App.css';
 import React from 'react';
-import Form from './form';
+import Form from './Form';
+import Cartwidget from './Cartwidget';
 
 const Navbar = () => {
   return (
@@ -11,8 +12,7 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="navbarColor01">
       <ul className="navbar-nav me-auto">
         <li className="nav-item">
-          <a className="nav-link active" href="#">Inicio
-          </a>
+          <a className="nav-link active" href="#">Inicio</a>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Productos</a>
@@ -23,6 +23,9 @@ const Navbar = () => {
       </ul>
         <Form contenBuscar="Productos"/>
     </div>
+    <>
+      <Cartwidget className= "icon"/>
+    </>
   </div>
 </nav>
     </>

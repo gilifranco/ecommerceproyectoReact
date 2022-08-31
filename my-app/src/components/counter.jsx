@@ -21,19 +21,19 @@ const Counter = ({stock, onAdd , min, sum ,res  }) => {
     }
 
   return (
-    <div>
-        <div className="counter-box">
-            <h1>Counter</h1>
+    <div className='card'>
+        <div className="counter-box card-title">
+            <h1>Producto</h1>
             <p>Stock: {stock} </p>
             <p>Cantidad: {count} </p>
         
-            <div>
+            <div className='card-body'>
                 <button className="btn" onClick={substract}> - </button>
                 <button className="btn" onClick={reset} > Reset </button>
                 <button className="btn" onClick={add}> + </button>
             </div>
             <div>
-                <button className="btn" onClick={() => onAdd(count)}>Confirmar</button>
+                <button className="btn" onClick={() => onAdd(count)}>Comprar</button>
             </div>
         </div>
     </div>

@@ -1,18 +1,15 @@
 import React from 'react';
 import './App.css';
 import Navbar from './Navbar'
-import ItemListContainer from './itemListContainer'
+import ItemListContainer from './ItemListContainer'
 const App = () => {
     return (
         <>
             <Navbar />
+        <ItemListContainer/>
         </>
     );
-    return (
-        <>
-        <itemListContainer/>
-        </>
-    )
+  
 }
 
 export default App;
