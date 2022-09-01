@@ -22,11 +22,10 @@ const Navbar = () => {
           <a className="nav-link" href="#">Nosotros</a>
         </li>
       </ul>
-        <CartWidget/>
         <Form contenBuscar="Productos"/>
     </div>
     <>
- 
+    <CartWidget/>
     </>
   </div>
 </nav>

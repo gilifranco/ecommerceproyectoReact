@@ -1,7 +1,7 @@
 import Item from "./Item";
 import { useEffect, useState } from "react";
 import { Data } from "../components/utils/Data";
-import GetProducts from "../utils/GetProducts";
+import GetProducts from "../components/utils/GetProducts";
 
 const ItemList = () => {
   const [products, setProducts] = useState([]);

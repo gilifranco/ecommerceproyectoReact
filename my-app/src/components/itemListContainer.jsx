@@ -1,16 +1,19 @@
 import React from 'react'
-import Counter from './Counter'
+import ItemList from './ItemList'
 
 
 const ItemListContainer = () => {
-    function onAdd(count){
-        console.log(`Se han seleccionado ${count} productos`)
-    }
+
   return (
-    <div>
-        <Counter stock={5} onAdd={onAdd} min={1} sum={1} res={1}/>
+    <div className="album py-5 bg-light">
+    <div className="container">
+      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <ItemList/>
+      </div>
     </div>
-  )
+  </div>
+);
+  
 }
 
 export default ItemListContainer
