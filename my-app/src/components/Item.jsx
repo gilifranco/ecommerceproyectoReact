@@ -8,7 +8,7 @@ const Item = (props) => {
         <img
           src={props.picureURL}
           class="rounded mx-auto d-block border border-dark"
-          alt="..."
+          alt="..." width="200rem"
         ></img>
         <div className="card-body">
           <p className="card-text">Precio ${props.price}</p>
