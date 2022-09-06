@@ -1,19 +1,38 @@
-import React from 'react'
+import React,{useState, useEffect} from 'react'
 import ItemList from './ItemList'
+import {data} from '../components/utils/Data'
+import { useParams } from 'react-router-dom'
+
+const ItemListContainer = ({saludo, greeting}) => {
+  const [productList, setProductList]=useState([])
+  const [loading, setLoading]= useState(false)
+  const{categoriaId}= useParams()
+
+useEffect(()=>{
+  setLoading(true)
+    data
+    .then((res)=>{
+      if(categoriaId){
+        setProductList(res.filter((item)=> item.category === categoriaId))
+      }else{
+        setProductList(res)
+      }
+    })
+    .catch((error)=> console.log(error))
+    .finally(()=> setLoading(false))
+  }, [categoriaId])
 
 
-const ItemListContainer = () => {
 
-  return (
-    <div className="album py-5 bg-light">
-    <div className="container">
-      <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <ItemList/>
-      </div>
-    </div>
-  </div>
-);
+
   
+  return (
+    <div style={{padding:'3rem'}}>
+        <p>{saludo}</p>
+        <p>{greeting}</p>
+      {loading ? <p>Cargando...</p>:<ItemList productList={productList}/>}
+    </div>
+  )
 }
 
-export default ItemListContainer
+export default ItemListContainer;

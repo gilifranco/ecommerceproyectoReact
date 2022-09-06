@@ -1,13 +1,21 @@
 import React from 'react';
 import './App.css';
-import Navbar from './Navbar'
 import ItemListContainer from './ItemListContainer'
+import ItemDetailContainer from './ItemDetailContainer';
+import {BrowserRouter, Routes, Route} from 'react-router-dom'
+import NavBoost from './NavBoost';
 const App = () => {
     return (
-        <>
-            <Navbar />
-        <ItemListContainer saludo="Bienvenido a mi ecommerce"/>
-        </>
+        <BrowserRouter>
+      <NavBoost/>
+        <Routes>
+          <Route path='/' element={ <ItemListContainer />}/>
+          <Route path='/categoria/:categoriaId' element={ <ItemListContainer />}/>
+          <Route path='/producto/:id' element={<ItemDetailContainer/>}/>
+        </Routes>
+    </BrowserRouter>
+  
+        
     );
   
 }

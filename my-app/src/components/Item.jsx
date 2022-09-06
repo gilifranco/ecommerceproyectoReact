@@ -1,28 +1,24 @@
-import Counter from "./Counter";
+import React from 'react'
+import {useNavigate}  from 'react-router-dom'
 
-const Item = (props) => {
-    return (
-        <>
-        <div className="card shadow-sm border border-dark">
-        <h4 className="text-center">{props.title}</h4>
-        <img
-          src={props.picureURL}
-          class="rounded mx-auto d-block border border-dark"
-          alt="..." width="200rem"
-        ></img>
-        <div className="card-body">
-          <p className="card-text">Precio ${props.price}</p>
-          <div className="d-flex justify-content-between align-items-center">
-            <div className="btn-group">
-              <Counter stock={props.stock} />
-            </div>
-            <small className="text-muted">Stock {props.stock}</small>
-          </div>
-        </div>
-      </div>
-    </>
-  );
-        
-    
+const Item = ({product}) => {
+
+    const {id, img, name, description, price, stock}= product
+    const navegar = useNavigate()
+  return (
+    <div className="card" style={{width:'20rem', margin:'.5rem'}}>
+    <img src={img} className="card-img-top" alt={name}/>
+    <div className="card-body">
+        <p className="card-text">{name}</p>
+        <p className="card-text">{description}</p>
+        <p className="card-text">${price}</p>
+        <p className="card-text">stock: {stock}</p>
+    </div>
+    {/* Navegacion con un boton  */}
+    <button className='btn btn-primary' onClick={()=>navegar(`/detalle/${id}`)}>Ver más</button>
+  </div>
+
+  )
 }
+
 export default Item;

@@ -1,31 +1,12 @@
-import Item from "./Item";
-import { useEffect, useState } from "react";
-import { Data } from "../components/utils/Data";
-import GetProducts from "../components/utils/GetProducts";
+import React from 'react'
+import Item from './Item'
 
-const ItemList = () => {
-  const [products, setProducts] = useState([]);
-
-  useEffect(() => {
-    GetProducts(Data)
-      .then((result) => setProducts(result))
-      .catch((error) => console.log(error));
-  }, []);
-
+const ItemList = ({productList}) => {
   return (
-    <>
-      {products.map((item) => (
-        <div key={item.id} className="col">
-          <Item
-            title={item.title}
-            picureURL={item.picureURL}
-            price={item.price}
-            stock={item.stock}
-          />
-        </div>
-      ))}
-    </>
-  );
-};
+    <div className="cardContainer">
+        {productList.map((product)=> <Item key={product.id} product={product}/>)}
+    </div>
+  )
+}
 
-export default ItemList;
+export default ItemList ;

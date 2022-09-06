@@ -4,7 +4,7 @@ import { ImCart } from 'react-icons/im';
  const Cartwidget = () => {
     return (
         <>
-            <h1>< ImCart size='2rem' color='white' padding='25px' />  </h1>
+            <h1>< ImCart size='2rem' color='black' padding='25px' />  </h1>
         </>
     );
 }

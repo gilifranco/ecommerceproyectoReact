@@ -1,51 +1,30 @@
-import {useState} from 'react'
+import React, { useState } from 'react'
 
-const Counter = (props) => {
-    const [ProductCount, setProductCount] = useState(1);
+const Counter = ({initial, stock, onAdd}) => {
+    const[count, setCount]= useState(initial)
 
-    const itemPlus = () => {
-      ProductCount < props.stock && setProductCount(ProductCount + 1);
-    };
-  
-    const itemMinus = () => {
-      ProductCount > 0 && setProductCount(ProductCount - 1);
-    };
-  
-    return (
-      <>
-        <div>
-          <div
-            className="btn-group"
-            role="group"
-            aria-label="Basic outlined example"
-          >
-            <button
-              type="button"
-              className="btn btn-outline-dark"
-              onClick={itemMinus}
-            >
-              <i className="bi bi-dash-circle-fill"></i>
-            </button>
-            <div className="container">
-              <h5>{ProductCount}</h5>
-            </div>
-            <button
-              type="button"
-              className="btn btn-outline-dark"
-              onClick={itemPlus}
-            >
-              <i className="bi bi-plus-circle-fill"></i>
-            </button>
-          </div>
-        </div>
-  
-        <div className="text-end">
-          <button type="button" className="btn btn-outline-dark">
-            Agregar al carrito
-          </button>
-        </div>
-      </>
-    );
-  };
+    const restar = () => {
+        if(count > initial){
+            setCount(count-1)
+        }
+    }
 
-export default Counter; 
+    const sumar=()=>{
+        if(count<stock){
+            setCount(count + 1)
+        }
+    }
+
+  return (
+    <>
+    <div>
+        <button className='btn btn-success' onClick={sumar}>+</button>
+        <span  className='btn btn-light'>{count}</span>
+        <button  className='btn btn-danger'onClick={restar}>-</button>
+    </div>
+        <button  className='btn btn-primary m-3'onClick={onAdd}>Comprar</button>
+    </>
+  )
+}
+
+export default Counter
