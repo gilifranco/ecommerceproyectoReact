@@ -1,11 +1,12 @@
 import React from 'react'
 import Counter from './Counter'
 
+
 const ItemDetail = ({productDetail}) => {
-    const {name, description, price, stock, img}= productDetail
+    const {name, description, price, stock, img}= productDetail|| {}
 
     const onAdd = () => {
-        console.log('compraste')
+        console.log('Agregaste al Carrito')
     }
     
   return (

@@ -98,9 +98,9 @@ const productos = [
       if(condition){
         resolve(productos)
       }else{
-        reject(' Erro 504! ')
+        reject(' Error 504! ')
       }
 
-    },3000)
+    },)
 
   })
