@@ -1,12 +1,11 @@
 import React from 'react'
-import Counter from './Counter'
-
+import ItemCount from './ItemCount'
 
 const ItemDetail = ({productDetail}) => {
-    const {name, description, price, stock, img}= productDetail|| {}
+    const {name, description, price, stock, img}= productDetail || {}
 
     const onAdd = () => {
-        console.log('Agregaste al Carrito')
+        console.log('compraste')
     }
     
   return (
@@ -15,7 +14,7 @@ const ItemDetail = ({productDetail}) => {
         <img src={img} alt={name} style={{width:'25rem'}}/>
         <p>{description}</p>
         <p>${price}</p>
-        <Counter stock={stock} initial={1} onAdd={onAdd}/>
+        <ItemCount stock={stock} initial={1} onAdd={onAdd}/>
     </div>
   )
 }
