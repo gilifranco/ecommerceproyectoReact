@@ -10,10 +10,10 @@ const ItemDetailContainer = () => {
 
     useEffect(()=>{
         data
-        .then((res)=> setProductDetail(res.find((item)=> item.id === id)))
+        .then((res)=> setProductDetail(res.find((item)=> item.id == id)))
         .catch((error)=> console.log(error))
         .finally(()=> setLoading(false))
-    },[id])
+    },[id] )
    
   return (
     <div>

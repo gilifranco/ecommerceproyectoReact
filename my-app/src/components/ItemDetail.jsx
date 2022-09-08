@@ -2,10 +2,11 @@ import React from 'react'
 import ItemCount from './ItemCount'
 
 const ItemDetail = ({productDetail}) => {
-    const {name, description, price, stock, img}= productDetail || {}
+    const {name, description, price, stock, img}= productDetail
+
 
     const onAdd = () => {
-        console.log('compraste')
+        console.log('Agregado al Carrito')
     }
     
   return (
@@ -19,4 +20,4 @@ const ItemDetail = ({productDetail}) => {
   )
 }
 
-export default ItemDetail
+export default ItemDetail;

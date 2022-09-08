@@ -1,4 +1,4 @@
-const productos = [
+const products = [
   {
     id: 1,
     name: "Shampoo ColorMaster Neutro",
@@ -96,7 +96,7 @@ const productos = [
     let condition = true
     setTimeout(()=> {
       if(condition){
-        resolve(productos)
+        resolve(products)
       }else{
         reject(' Error 504! ')
       }

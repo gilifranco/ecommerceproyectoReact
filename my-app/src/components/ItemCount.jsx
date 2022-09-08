@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const Counter = ({initial, stock, onAdd}) => {
+const ItemCount = ({initial, stock, onAdd}) => {
     const[count, setCount]= useState(initial)
 
     const restar = () => {
@@ -27,4 +27,4 @@ const Counter = ({initial, stock, onAdd}) => {
   )
 }
 
-export default Counter
+export default ItemCount
