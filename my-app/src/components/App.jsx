@@ -4,7 +4,8 @@ import NavBoost from './NavBoost';
 import ItemDetailContainer from './ItemDetailContainer';
 import {BrowserRouter, Routes, Route} from 'react-router-dom'
 import Cart from './Cart';
-import {CartProvider} from '../context/CartContext'
+import {CartProvider} from '../context/CartContext';
+import Checkout from './Checkout';
 
 const App = () => {
     return (
@@ -17,6 +18,7 @@ const App = () => {
           <Route path='/detalle/:id' element={<ItemDetailContainer/>}/>
           <Route path='*' element={<h1>Error 404</h1>}></Route>
           <Route path='/cart' element={<Cart/>}/>
+          <Route path='/checkout' element={<Checkout/>}/>
         </Routes>
     </BrowserRouter>
     </CartProvider>

@@ -22,7 +22,9 @@ const NavBoost = () => {
         </li>
         
       </ul>
+      <NavLink to='/cart' className="nav-link active"> 
       <CartWidget/>
+      </NavLink>
     </div>
   </div>
 </nav>
