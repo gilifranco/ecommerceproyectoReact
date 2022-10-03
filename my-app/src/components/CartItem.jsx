@@ -5,7 +5,7 @@ const CartItem = ({compra}) => {
     const{removeItem}=useCart()
   return (
     <div  style={{display:'flex', justifyContent:'space-between', alignItems:'center', padding:'2rem', width:'100%'}}>
-                <img src={compra.img} alt={compra.name} styte={{width:'10rem'}}/>
+                <img src={compra.img} alt={compra.name} style={{width:'10rem'}}/>
                 <span>{compra.name}</span>
                 <span>{compra.quantity}</span>
                 <span>${compra.price}</span>

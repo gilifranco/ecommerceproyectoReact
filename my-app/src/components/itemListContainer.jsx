@@ -50,7 +50,7 @@ useEffect(()=>{
 
 
 
-  console.log(productList)
+ 
   return (
     <div style={{padding:'3rem'}}>
         <p>{saludo}</p>

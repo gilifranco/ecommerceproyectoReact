@@ -7,12 +7,12 @@ const Cart = () => {
 
 const {cart,  cartTotal, clear}=useCart()
 const navegar = useNavigate()
-console.log(cart)
+
 return (
   <div>
     {
       !cart.length 
-      ?<div>
+      ?<div style={{display:'flex', justifyContent:'space-between', alignItems:'center', padding:'3rem'}}>
         <h2>Tu carrito esta vacio!</h2>
         <h4>Te invitamos a ver nuestros productos</h4>
         <button className='btn btn-success' onClick={()=>navegar('/')}>Ir a comprar</button>
